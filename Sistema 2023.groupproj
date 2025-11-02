@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0DB8568B-3C6E-4E4B-B647-1AF7FFBB5670}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SISCOVENTv2023.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SISCOVENTv2022.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Remodelaciones Formularios\Remodelaciones.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SISCOVENTv2023">
+        <MSBuild Projects="SISCOVENTv2023.dproj"/>
+    </Target>
+    <Target Name="SISCOVENTv2023:Clean">
+        <MSBuild Projects="SISCOVENTv2023.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SISCOVENTv2023:Make">
+        <MSBuild Projects="SISCOVENTv2023.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SISCOVENTv2022">
+        <MSBuild Projects="SISCOVENTv2022.dproj"/>
+    </Target>
+    <Target Name="SISCOVENTv2022:Clean">
+        <MSBuild Projects="SISCOVENTv2022.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SISCOVENTv2022:Make">
+        <MSBuild Projects="SISCOVENTv2022.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Remodelaciones">
+        <MSBuild Projects="Remodelaciones Formularios\Remodelaciones.dproj"/>
+    </Target>
+    <Target Name="Remodelaciones:Clean">
+        <MSBuild Projects="Remodelaciones Formularios\Remodelaciones.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Remodelaciones:Make">
+        <MSBuild Projects="Remodelaciones Formularios\Remodelaciones.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SISCOVENTv2023;SISCOVENTv2022;Remodelaciones"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SISCOVENTv2023:Clean;SISCOVENTv2022:Clean;Remodelaciones:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SISCOVENTv2023:Make;SISCOVENTv2022:Make;Remodelaciones:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

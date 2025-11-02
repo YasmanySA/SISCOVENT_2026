@@ -1,0 +1,64 @@
+# ===========================================
+#   .gitignore para proyectos Delphi Win32/64
+#   Autor: ChatGPT (Optimizado)
+# ===========================================
+
+# --- Carpetas de compilación (generadas automáticamente) ---
+Win32/
+Win64/
+cashbox/
+# --- Archivos binarios del compilador (se regeneran siempre) ---
+*.exe
+*.dll
+*.bpl
+*.bpi
+*.dcp
+*.dcu
+*.so
+*.apk
+*.drc
+*.map
+*.dres
+*.rsm
+*.tds
+*.lib
+*.a
+*.o
+*.ocx
+
+# --- Archivos de configuración y caché (específicos del usuario) ---
+*.local
+*.identcache
+*.projdata
+*.tvsconfig
+*.dsk
+*.dsv
+*.stat
+
+# --- Archivos de respaldo automáticos ---
+__history/
+__recovery/
+*.~*
+
+# --- Archivos de configuración del compilador (innecesarios en control de versiones) ---
+*.cfg
+*.hpp
+*Resource.rc
+
+# --- Dependencias externas (Boss u otros gestores) ---
+modules/
+
+# --- Archivos opcionales: descomenta si NO los usas ---
+# *.res      # Archivos de recursos binarios (usa .rc si prefieres mantenerlos en texto)
+# *.ddp      # Diagramas antiguos (Delphi 7 o anterior)
+# *.vlb      # LiveBindings (si no usas el diseñador visual)
+# *.deployproj  # Configuración de despliegue móvil/remoto
+# *.obj      # Objetos C/C++ si no usas librerías externas
+
+# --- Archivos temporales de compilación multi-plataforma ---
+# OSX64/
+# OSXARM64/
+# Android/
+# Android64/
+# iOSDevice64/
+# Linux64/

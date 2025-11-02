@@ -1,0 +1,4 @@
+﻿<?xml version="1.0"?>
+<doc><members><member name="GetAppVersion"><summary>Obtener el numero de version de la app(VCL)</summary>
+		</member><member name="LimpiarCaracteres(string,TParametroFuncion)"><example>Edit1.text</example>
+		</member></members></doc>

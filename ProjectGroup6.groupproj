@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{97EA22BE-8596-4F1A-A31C-B1A3149830B6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SISCOVENTv2026.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="D:\Documentos\Embarcadero\Studio\Projects\Project36.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SISCOVENTv2026">
+        <MSBuild Projects="SISCOVENTv2026.dproj"/>
+    </Target>
+    <Target Name="SISCOVENTv2026:Clean">
+        <MSBuild Projects="SISCOVENTv2026.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SISCOVENTv2026:Make">
+        <MSBuild Projects="SISCOVENTv2026.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project36">
+        <MSBuild Projects="D:\Documentos\Embarcadero\Studio\Projects\Project36.dproj"/>
+    </Target>
+    <Target Name="Project36:Clean">
+        <MSBuild Projects="D:\Documentos\Embarcadero\Studio\Projects\Project36.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project36:Make">
+        <MSBuild Projects="D:\Documentos\Embarcadero\Studio\Projects\Project36.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SISCOVENTv2026;Project36"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SISCOVENTv2026:Clean;Project36:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SISCOVENTv2026:Make;Project36:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

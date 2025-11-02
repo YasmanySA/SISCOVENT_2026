@@ -1,0 +1,80 @@
+object FormPropina: TFormPropina
+  Left = 0
+  Top = 0
+  AutoSize = True
+  Caption = 'FormPropina'
+  ClientHeight = 113
+  ClientWidth = 233
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Position = poDesktopCenter
+  OnClose = FormClose
+  TextHeight = 13
+  object cxGroupBox1: TcxGroupBox
+    Left = 0
+    Top = 0
+    Caption = 'Propina'
+    ParentFont = False
+    Style.LookAndFeel.NativeStyle = False
+    StyleDisabled.LookAndFeel.NativeStyle = False
+    TabOrder = 0
+    Height = 113
+    Width = 233
+    object RGCambio: TcxRadioButton
+      Left = 8
+      Top = 24
+      Width = 113
+      Height = 17
+      Caption = 'Cambio'
+      TabOrder = 0
+    end
+    object RGPropina: TcxRadioButton
+      Left = 8
+      Top = 80
+      Width = 113
+      Height = 17
+      Caption = 'Propina'
+      TabOrder = 1
+    end
+    object edpropina: TcxDBCurrencyEdit
+      Left = 80
+      Top = 55
+      DataBinding.DataField = 'Propina'
+      DataBinding.DataSource = DMCaja.DSVentasCaja
+      ParentFont = False
+      Style.Font.Charset = ANSI_CHARSET
+      Style.Font.Color = clGreen
+      Style.Font.Height = -37
+      Style.Font.Name = 'Digiface'
+      Style.Font.Style = [fsBold]
+      Style.LookAndFeel.NativeStyle = False
+      Style.IsFontAssigned = True
+      StyleDisabled.LookAndFeel.NativeStyle = False
+      StyleFocused.LookAndFeel.NativeStyle = False
+      StyleHot.LookAndFeel.NativeStyle = False
+      StyleReadOnly.LookAndFeel.NativeStyle = False
+      TabOrder = 2
+      Width = 121
+    end
+    object BtPropina: TcxButton
+      Left = 88
+      Top = 16
+      Width = 105
+      Height = 33
+      Caption = 'Aceptar'
+      LookAndFeel.NativeStyle = False
+      TabOrder = 3
+      OnClick = BtPropinaClick
+    end
+  end
+  object timer_tip: TTimer
+    Interval = 10
+    OnTimer = timer_tipTimer
+    Left = 304
+    Top = 32
+  end
+end

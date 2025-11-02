@@ -2734,21 +2734,20 @@ object FormVenta: TFormVenta
       end
     end
     object edPrecioBase: TcxDBCurrencyEdit
-      Left = 10000
-      Top = 10000
+      Left = 1244
+      Top = 213
       AutoSize = False
       DataBinding.DataField = 'PrecioBase'
       DataBinding.DataSource = DMCaja.DSMedidasPlasticado
       Style.HotTrack = False
       Style.TransparentBorder = False
       TabOrder = 44
-      Visible = False
       Height = 20
       Width = 471
     end
     object edLargo: TcxCurrencyEdit
-      Left = 10000
-      Top = 10000
+      Left = 1281
+      Top = 285
       AutoSize = False
       EditValue = 0.000000000000000000
       ParentFont = False
@@ -2767,13 +2766,12 @@ object FormVenta: TFormVenta
       Style.TransparentBorder = False
       Style.IsFontAssigned = True
       TabOrder = 46
-      Visible = False
       Height = 40
       Width = 434
     end
     object edAncho: TcxCurrencyEdit
-      Left = 10000
-      Top = 10000
+      Left = 1281
+      Top = 239
       AutoSize = False
       EditValue = 0.000000000000000000
       ParentFont = False
@@ -2792,13 +2790,12 @@ object FormVenta: TFormVenta
       Style.TransparentBorder = False
       Style.IsFontAssigned = True
       TabOrder = 45
-      Visible = False
       Height = 40
       Width = 434
     end
     object edPrecioCalculo: TcxCurrencyEdit
-      Left = 10000
-      Top = 10000
+      Left = 1244
+      Top = 355
       AutoSize = False
       EditValue = 0.000000000000000000
       Enabled = False
@@ -2818,13 +2815,12 @@ object FormVenta: TFormVenta
       StyleDisabled.TextColor = clLime
       StyleDisabled.TextStyle = [fsBold]
       TabOrder = 47
-      Visible = False
       Height = 65
       Width = 471
     end
     object cxButton11: TcxButton
-      Left = 10000
-      Top = 10000
+      Left = 1244
+      Top = 426
       Width = 471
       Height = 43
       LookAndFeel.Kind = lfUltraFlat
@@ -2843,17 +2839,15 @@ object FormVenta: TFormVenta
       SpeedButtonOptions.CanBeFocused = False
       SpeedButtonOptions.Transparent = True
       TabOrder = 48
-      Visible = False
       OnClick = cxButton11Click
     end
     object cxGrid5: TcxGrid
-      Left = 10000
-      Top = 10000
+      Left = 1244
+      Top = 475
       Width = 471
       Height = 344
       Anchors = []
       TabOrder = 49
-      Visible = False
       LookAndFeel.NativeStyle = False
       object cxGrid5DBTableView1: TcxGridDBTableView
         Navigator.Buttons.CustomButtons = <>
@@ -3146,8 +3140,8 @@ object FormVenta: TFormVenta
       end
     end
     object cxDBCurrencyEdit4: TcxDBCurrencyEdit
-      Left = 10000
-      Top = 10000
+      Left = 1289
+      Top = 837
       AutoSize = False
       DataBinding.DataField = 'Area'
       DataBinding.DataSource = DMCaja.DSQ_PlasticadoResumen
@@ -3170,13 +3164,12 @@ object FormVenta: TFormVenta
       StyleDisabled.TextColor = clBackground
       StyleDisabled.TextStyle = [fsBold]
       TabOrder = 50
-      Visible = False
       Height = 50
       Width = 196
     end
     object cxDBCurrencyEdit5: TcxDBCurrencyEdit
-      Left = 10000
-      Top = 10000
+      Left = 1533
+      Top = 837
       AutoSize = False
       DataBinding.DataField = 'Precio'
       DataBinding.DataSource = DMCaja.DSQ_PlasticadoResumen
@@ -3198,13 +3191,12 @@ object FormVenta: TFormVenta
       StyleDisabled.TextColor = clBackground
       StyleDisabled.TextStyle = [fsBold]
       TabOrder = 51
-      Visible = False
       Height = 50
       Width = 191
     end
     object cxButton9: TcxButton
-      Left = 10000
-      Top = 10000
+      Left = 1483
+      Top = 893
       Width = 241
       Height = 64
       LookAndFeel.Kind = lfUltraFlat
@@ -3249,17 +3241,17 @@ object FormVenta: TFormVenta
       SpeedButtonOptions.CanBeFocused = False
       SpeedButtonOptions.Transparent = True
       TabOrder = 53
-      Visible = False
       OnClick = cxButton9Click
     end
     object btClearService_Frecuenty: TcxButton
-      Left = 1235
-      Top = 914
+      Left = 10000
+      Top = 10000
       Width = 489
       Height = 43
       Caption = 'Limpiar Servicios Frecuente'
       Enabled = False
       TabOrder = 43
+      Visible = False
       OnClick = btClearService_FrecuentyClick
     end
     object dxLayoutControl1: TdxLayoutControl
@@ -4346,8 +4338,8 @@ object FormVenta: TFormVenta
       OnClick = btMinimiseClick
     end
     object cbListServices: TStyledCategoryButtons
-      Left = 1236
-      Top = 165
+      Left = 10000
+      Top = 10000
       Width = 487
       Height = 742
       BackgroundGradientColor = clBlueviolet
@@ -4395,6 +4387,7 @@ object FormVenta: TFormVenta
       RegularButtonColor = clLime
       SelectedButtonColor = 15132390
       TabOrder = 42
+      Visible = False
       StyleName = 'Aqua Graphite'
       OnButtonClicked = cbListServicesButtonClicked
       OnExit = cbListServicesExit
@@ -4403,8 +4396,8 @@ object FormVenta: TFormVenta
       StyleDrawType = btRounded
     end
     object cxButton7: TcxButton
-      Left = 10000
-      Top = 10000
+      Left = 1235
+      Top = 893
       Width = 242
       Height = 64
       LookAndFeel.Kind = lfUltraFlat
@@ -4442,7 +4435,6 @@ object FormVenta: TFormVenta
       SpeedButtonOptions.CanBeFocused = False
       SpeedButtonOptions.Transparent = True
       TabOrder = 52
-      Visible = False
       OnClick = cxButton7Click
     end
     object btOpenBox: TcxButton
@@ -9689,6 +9681,7 @@ object FormVenta: TFormVenta
     object dxLayoutGroup9: TdxLayoutGroup
       Parent = LGServices
       AlignVert = avClient
+      ItemIndex = 1
       LayoutDirection = ldTabbed
       ShowBorder = False
       Index = 0
@@ -38877,9 +38870,9 @@ object FormVenta: TFormVenta
     ParentFont = False
   end
   object cxGrid6: TcxGrid
-    Left = 103
-    Top = 680
-    Width = 664
+    Left = 364
+    Top = 774
+    Width = 305
     Height = 150
     TabOrder = 28
     Visible = False

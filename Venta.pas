@@ -1901,6 +1901,7 @@ begin
   try
     DMCaja.tbCaja.ParamByName('idUser').AsInteger := UID;
     DMCaja.tbCaja.Open;
+    DMCaja.tbCaja.Refresh;
     ShowCUP.ShortCut := ShortCut(VK_ADD, []);
   except
     on E: Exception do

@@ -16,10 +16,17 @@ object DMCaja: TDMCaja
     SQL.Strings = (
       'SELECT *'
       'FROM tbVentasCajaQ'
-      '-- WHERE IDUser = :idUser AND history = 0 OR share = 1'
+      'WHERE IDUser = :idUser AND history = 0 OR share = 1'
       '')
     Left = 48
     Top = 32
+    ParamData = <
+      item
+        Name = 'IDUSER'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
     object tbCajaNoComp: TLargeintField
       AutoGenerateValue = arAutoInc
       FieldName = 'NoComp'

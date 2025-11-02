@@ -11027,6 +11027,7 @@ object FormVenta: TFormVenta
     Width = 557
     Height = 339
     TabOrder = 18
+    Visible = False
     object cxGridDBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -11156,6 +11157,7 @@ object FormVenta: TFormVenta
     DragCursor = crAppStart
     TabOrder = 21
     TabStop = False
+    Visible = False
     LookAndFeel.NativeStyle = False
     LookAndFeel.ScrollbarMode = sbmDefault
     object dataDescripcion: TcxGridDBTableView
@@ -38880,6 +38882,7 @@ object FormVenta: TFormVenta
     Width = 664
     Height = 150
     TabOrder = 28
+    Visible = False
     object cxGridDBTableView2: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       Navigator.Buttons.First.Visible = True
@@ -39063,11 +39066,12 @@ object FormVenta: TFormVenta
     OnClick = Button9Click
   end
   object cxGrid1: TcxGrid
-    Left = 581
-    Top = 365
-    Width = 451
-    Height = 200
+    Left = 773
+    Top = 618
+    Width = 207
+    Height = 91
     TabOrder = 34
+    Visible = False
     object cxGrid1DBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       ScrollbarAnnotations.CustomAnnotations = <>
@@ -39157,9 +39161,10 @@ object FormVenta: TFormVenta
   object cxGrid8: TcxGrid
     Left = 498
     Top = 448
-    Width = 408
-    Height = 200
+    Width = 236
+    Height = 95
     TabOrder = 35
+    Visible = False
     object cxGrid8DBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       ScrollbarAnnotations.CustomAnnotations = <>
